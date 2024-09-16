@@ -21,11 +21,11 @@ go build ./cmd/layerd
 
 # Initialize the chain
 echo "Initializing the chain..."
-./layerd init layer --chain-id layer
+./layerd init layer --chain-id layertest-1
 
 # Initialize chain node with the folder for alice
 echo "Initializing chain node for alice..."
-./layerd init alicemoniker --chain-id layer --home $DATA/.layer/alice
+./layerd init alicemoniker --chain-id layertest-1 --home $DATA/.layer/alice
 
 # Add a validator account for alice
 echo "Adding validator account for alice..."
